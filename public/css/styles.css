@@ -1,0 +1,112 @@
+body {
+  max-width: 960px;
+  margin: auto;
+  background: #000;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 36px;
+  padding: 0.5em;
+}
+h2 {
+  font-size: 24px;
+  padding: 0.2em;
+}
+h3 {
+  font-size: 20px;
+  padding: 0.2em;
+}
+.header {
+  background-color: rgb(80, 125, 247);
+  margin: 0 0 20px 0;
+  color: white;
+  text-align: center;
+}
+/* expasion panels */
+.expansion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: 0.5em 0 0.5em 0;
+}
+.active {
+  background-color: #ccc;
+  margin: 0.5em 0 0 0;
+}
+.expansion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* content */
+.teaser {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.line {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 100%;
+  border-bottom: rgba(112, 112, 112, 0.5) solid 1px;
+}
+/* add comment */
+.user-com-title,
+.user-com-body {
+  box-sizing: border-box;
+  width: 260px;
+  display: block;
+  margin: 5px;
+  border: 1px solid #444;
+}
+.user-com-body {
+  resize: none;
+}
+.user-com-title:focus {
+  outline: none;
+  border: solid 1px rgb(80, 125, 247);
+}
+.user-com-body:focus {
+  outline: none;
+  border: solid 1px rgb(80, 125, 247);
+}
+.button-primary {
+  margin: 5px;
+  background: rgb(80, 125, 247);
+  border: solid 1px black;
+  border-radius: 3px;
+  padding: 0.5em;
+  outline: none;
+}
+.button-primary:hover {
+  outline: none;
+  background: rgb(131, 164, 255);
+}
+/* users comments display */
+.com-container {
+  border: 1px solid rgba(112, 112, 112, 0.5);
+  background: rgb(238, 238, 238);
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.com-title {
+  padding: 1em;
+  font-size: 18px;
+}
+.com-body {
+  padding: 1em;
+  font-size: 16px;
+}

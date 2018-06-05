@@ -1,0 +1,19 @@
+<header class="header">
+  <h1>WELCOME TO TECH ISLE</h1>
+</header>
+<article>
+  {{#each articles}}
+  <div>
+    <button class='expansion'>
+      <h2>{{title}}</h2>
+    </button>
+    <div class='panel'>
+      <p class="teaser">{{teaser}}</p>
+      <a class="art-link" href={{link}}>See full article</a>
+      <div class='line'></div>
+      <h3>Add comment</h3>
+      {{>add-com _id=_id}} {{#if comments}} {{>com-view comments=comments}} {{/if}}
+    </div>
+  </div>
+  {{/each}}
+</article>
